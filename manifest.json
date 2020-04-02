@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Cào ảnh instagram",
+    "version": "0.0.1",
+
+    "description": "Cào ảnh từ instagram",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "16": "icon.png",
+            "24": "icon.png",
+            "32": "icon.png"
+        },
+        "default_title": "Cào ảnh thôi",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}

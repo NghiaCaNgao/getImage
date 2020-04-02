@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .container {
+            max-height: 400px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        .row {
+            display: inline-block;
+            height: 70px;
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        
+        .row:hover {
+            box-shadow: 1px 1px 20px 0px #0000005e;
+        }
+        
+        button,
+        a {
+            display: block;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(233, 72, 104);
+            cursor: pointer;
+            color: white;
+            font-size: 1.1em;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        button:hover,
+        a:hover {
+            background-color: crimson;
+        }
+        
+        ._link {
+            height: 30px;
+            margin: 5px;
+            border-radius: 5px;
+            color: rgb(233, 72, 104);
+            font-size: 1.1em;
+            width: 50%;
+            max-width: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        ._link p {
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+        
+        .row:hover ._link {
+            background-color: rgb(235, 131, 152);
+            color: white;
+        }
+        
+        ._img {
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 80px;
+            background-color: rgb(212, 209, 209);
+        }
+        
+        img {
+            border-radius: 5px;
+        }
+        
+        .tool:hover {
+            box-shadow: none;
+        }
+        
+        *:focus {
+            outline: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- <div class="row tool">
+            <a id="download">Download All</a>
+        </div> -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
